@@ -155,3 +155,8 @@ CORS_ALLOWED_ORIGINS = [
     for origin in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
     if origin.strip()
 ]
+
+# Demo auth: no sessions/JWT, so disable DRF's session auth to avoid CSRF enforcement
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [],
+}
