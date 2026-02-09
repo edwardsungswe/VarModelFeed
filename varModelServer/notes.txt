@@ -1,0 +1,9 @@
+if i change or make a model
+python3 manage.py makemigrations
+then 
+python3 manage.py migrate 
+to actually migrate them
+start django server
+python3 manage.py runserver
+runseed
+python3 manage.py seed

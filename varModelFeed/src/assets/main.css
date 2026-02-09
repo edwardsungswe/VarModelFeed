@@ -1,0 +1,19 @@
+@import './base.css';
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-primary-dark);
+  }
+}
